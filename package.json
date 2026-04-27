@@ -1,0 +1,17 @@
+{
+    "name": "mclean-pool-services",
+    "version": "1.0.0",
+    "description": "McLean Pool Services  One Call  One Guy  One Clean Pool",
+    "author": "McLean Pool Services LLC",
+    "license": "UNLICENSED",
+    "private": true,
+    "scripts": {
+          "dev": "netlify dev",
+          "build:reviews": "node scripts/build-reviews.js",
+          "backup": "bash scripts/backup-data.sh",
+          "predeploy": "bash scripts/deploy-check.sh",
+          "deploy": "netlify deploy --prod"
+    },
+    "dependencies": {},
+    "devDependencies": {}
+}

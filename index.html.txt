@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>McLean Pool Services | One Call • One Guy • One Clean Pool</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Professional pool cleaning, maintenance, and repair services in Pecan Grove, TX. Reliable, local, and owner‑operated." />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/4222026LOGO.png" />
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header-content">
+            <img src="assets/images/4222026LOGO.png" alt="McLean Pool Services Logo" class="logo" />
+            <nav class="nav">
+                <a href="/">Home</a>
+                <a href="pages/services.html">Services</a>
+                <a href="pages/reviews.html">Reviews</a>
+                <a href="pages/contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>McLean Pool Services</h1>
+            <p class="tagline">One Call • One Guy • One Clean Pool</p>
+            <a href="pages/contact.html" class="btn-primary">Request Service</a>
+        </div>
+    </section>
+
+    <!-- SERVICES PREVIEW -->
+    <section class="services-preview">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3>Weekly Cleaning</h3>
+                    <p>Reliable weekly pool cleaning to keep your water clear, balanced, and safe.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Equipment Repair</h3>
+                    <p>Pumps, filters, heaters, automation — fast diagnosis and professional repair.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Green to Clean</h3>
+                    <p>Turn your green pool crystal clear with our proven recovery process.</p>
+                </div>
+            </div>
+
+            <a href="pages/services.html" class="btn-secondary">View All Services</a>
+        </div>
+    </section>
+
+    <!-- REVIEWS PREVIEW -->
+    <section class="reviews-preview">
+        <div class="container">
+            <h2>Customer Reviews</h2>
+            <div id="reviews-container" class="reviews-container">
+                <!-- JS will load reviews here -->
+            </div>
+            <a href="pages/reviews.html" class="btn-secondary">Read More Reviews</a>
+        </div>
+    </section>
+
+    <!-- CONTACT CTA -->
+    <section class="cta">
+        <div class="container">
+            <h2>Need Pool Service?</h2>
+            <p>Fast response. Honest pricing. Owner‑operated.</p>
+            <a href="pages/contact.html" class="btn-primary">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© 2026 McLean Pool Services — Pecan Grove, TX</p>
+            <p>Email: Mcleanpoolservicesllc@gmail.com</p>
+            <a href="https://www.facebook.com/profile.php?id=61575176169589" target="_blank">Facebook</a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/reviews.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
