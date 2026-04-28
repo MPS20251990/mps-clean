@@ -315,3 +315,57 @@ a {
     text-align: center;
     margin-top: 30px;
 }
+/* --------------------------------------------------
+   CONTACT PAGE
+-------------------------------------------------- */
+.contact-section {
+    padding: 60px 0;
+}
+
+.contact-section h2 {
+    text-align: center;
+    color: #004c99;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-top: 15px;
+    display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.form-status {
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contact-info h3 {
+    color: #004c99;
+    margin-bottom: 10px;
+}
+
