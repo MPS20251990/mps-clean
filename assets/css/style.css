@@ -560,3 +560,19 @@ a {
 .social-icon svg {
     fill: currentColor;
 }
+.map-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.map-section h2 {
+    color: #004c99;
+    margin-bottom: 10px;
+}
+
+.map-container {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
