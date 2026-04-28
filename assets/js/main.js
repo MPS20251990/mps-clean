@@ -32,3 +32,28 @@ function escapeHtml(str) {
   div.textContent = str;
   return div.innerHTML;
 }
+// CONTACT FORM HANDLER
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const formStatus = document.getElementById('form-status');
+        formStatus.textContent = "Sending...";
+
+        const formData = new FormData(contactForm);
+        const data = Object.fromEntries(formData.entries());
+
+        const response = await fetch('/.netlify/functions/contact-form', {
+            method: 'POST',
+            body: JSON.stringify(data)
+        });
+
+        if (response.ok) {
+            formStatus.textContent = "Message sent! I'll get back to you shortly.";
+            contactForm.reset();
+        } else {
+            formStatus.textContent = "Something went wrong. Please try again.";
+        }
+    });
+}
