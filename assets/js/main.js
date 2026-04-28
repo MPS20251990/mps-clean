@@ -57,3 +57,13 @@ if (contactForm) {
         }
     });
 }
+// MOBILE MENU TOGGLE
+const mobileToggle = document.getElementById('mobile-menu-toggle');
+const navLinks = document.getElementById('nav-links');
+
+if (mobileToggle) {
+    mobileToggle.addEventListener('click', () => {
+        mobileToggle.classList.toggle('open');
+        navLinks.classList.toggle('open');
+    });
+}
