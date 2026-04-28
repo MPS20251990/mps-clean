@@ -11,6 +11,7 @@
 
 <body>
 
+<!-- HEADER -->
 <header class="header">
     <div class="container header-content">
         <img src="../assets/images/4222026LOGO.png" class="logo" alt="McLean Pool Services Logo">
@@ -24,6 +25,7 @@
     </div>
 </header>
 
+<!-- PAGE HEADER -->
 <section class="page-header">
     <div class="container">
         <h1>Contact Us</h1>
@@ -31,14 +33,35 @@
     </div>
 </section>
 
+<!-- CONTACT FORM SECTION -->
 <section class="contact-section">
     <div class="container">
 
+        <h2>Send Us a Message</h2>
+
+        <form name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact">
+
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="phone" placeholder="Your Phone Number" required>
+
+            <textarea name="message" placeholder="How can we help you?" required></textarea>
+
+            <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+
+        <hr style="margin: 40px 0;">
+
+        <!-- REVIEW FORM -->
         <h2 id="review-form">Leave a Review</h2>
 
         <form name="reviews" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="reviews">
+
             <input type="text" name="name" placeholder="Your Name" required>
             <textarea name="message" placeholder="Your Review" required></textarea>
+
             <button type="submit" class="btn-primary">Submit Review</button>
         </form>
 
