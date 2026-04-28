@@ -6,7 +6,7 @@
 
     <!-- SEO -->
     <title>Customer Reviews | McLean Pool Services</title>
-    <meta name="description" content="Read real customer reviews from Google, Facebook, and verified website submissions for McLean Pool Services in Pecan Grove, TX.">
+    <meta name="description" content="Read real customer reviews from Google and verified website submissions for McLean Pool Services in Pecan Grove, TX.">
     <link rel="canonical" href="https://www.mcleanpoolservices.com/pages/reviews.html">
     <meta name="theme-color" content="#003366">
 
@@ -36,11 +36,82 @@
     }
     </script>
 
-    <!-- Review Schema (static version, updated later with dynamic feed) -->
+    <!-- Aggregate Rating Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "AggregateRating",
       "itemReviewed": {
         "@type": "LocalBusiness",
-        "name": "McLean Pool Services
+        "name": "McLean Pool Services"
+      },
+      "ratingValue": "5",
+      "reviewCount": "25"
+    }
+    </script>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Customer Reviews</h1>
+</header>
+
+<section class="reviews-section">
+
+    <div class="review-source">
+        <h2>Google Reviews</h2>
+        <p>These reviews are pulled directly from Google and verified customers.</p>
+        <a class="button" href="https://g.page/r/Cf0tHnS9x2tPEBM/review" target="_blank">Write a Google Review</a>
+    </div>
+
+    <div class="reviews-list" id="google-reviews">
+        <!-- Google reviews will be injected here by your script or static content -->
+        <p>Google reviews loading…</p>
+    </div>
+
+    <hr>
+
+    <div class="review-source">
+        <h2>Website Reviews</h2>
+        <p>These reviews were submitted directly through our website and verified before publishing.</p>
+    </div>
+
+    <div class="reviews-list" id="website-reviews">
+        <!-- Netlify-approved reviews will load here -->
+        <p>Website reviews loading…</p>
+    </div>
+
+    <hr>
+
+    <div class="review-form">
+        <h2>Submit a Review</h2>
+        <p>Your review will be verified and published once approved.</p>
+
+        <form name="review-submission" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="review-submission">
+
+            <label>Name</label>
+            <input type="text" name="name" required>
+
+            <label>Rating</label>
+            <select name="rating" required>
+                <option value="5">5 - Excellent</option>
+                <option value="4">4 - Great</option>
+                <option value="3">3 - Good</option>
+                <option value="2">2 - Fair</option>
+                <option value="1">1 - Poor</option>
+            </select>
+
+            <label>Review</label>
+            <textarea name="review" rows="5" required></textarea>
+
+            <button type="submit">Submit Review</button>
+        </form>
+    </div>
+
+</section>
+
+</body>
+</html>
