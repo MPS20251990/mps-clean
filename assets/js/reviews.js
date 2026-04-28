@@ -1,32 +1,41 @@
 
-fetch('/assets/data/reviews.json')
-  .then(res => res.json())
-  .then(data => {
-    const preview = document.getElementById('review-preview');
-    const fullList = document.getElementById('reviews-container');
+let reviews = [];
+let visibleCount = 3;
 
-    if (preview) {
-      data.slice(0, 3).forEach(r => {
-        preview.innerHTML += `
-          <div class="review-card">
-            <strong>${r.name}</strong><br>
-            ⭐⭐⭐⭐⭐<br>
-            <p>${r.text}</p>
-          </div>
-        `;
-      });
-    }
+async function loadReviews() {
+    const response = await fetch('../data/reviews.json');
+    reviews = await response.json();
+    renderReviews();
+}
 
-    if (fullList) {
-      data.forEach(r => {
-        fullList.innerHTML += `
-          <div class="review-card">
-            <strong>${r.name}</strong><br>
-            ⭐⭐⭐⭐⭐<br>
-            <p>${r.text}</p>
-          </div>
+function renderReviews() {
+    const container = document.getElementById('reviews-list');
+    container.innerHTML = '';
+
+    reviews.slice(0, visibleCount).forEach(review => {
+        const card = document.createElement('div');
+        card.className = 'review-card-full';
+
+        card.innerHTML = `
+            <h3>${review.name}</h3>
+            <p class="verified">Verified Customer</p>
+            <p>${review.message}</p>
         `;
-      });
+
+        container.appendChild(card);
+    });
+
+    const loadMoreBtn = document.getElementById('load-more');
+    if (visibleCount >= reviews.length) {
+        loadMoreBtn.style.display = 'none';
+    } else {
+        loadMoreBtn.style.display = 'block';
     }
-  })
-  .catch(err => console.error('Review load error:', err));
+}
+
+document.getElementById('load-more').addEventListener('click', () => {
+    visibleCount += 3;
+    renderReviews();
+});
+
+loadReviews();
