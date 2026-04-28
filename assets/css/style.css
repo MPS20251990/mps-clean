@@ -275,3 +275,43 @@ a {
     color: #007bff;
     text-decoration: underline;
 }
+/* --------------------------------------------------
+   FULL REVIEWS PAGE
+-------------------------------------------------- */
+.reviews-full {
+    padding: 60px 0;
+}
+
+.reviews-list {
+    display: grid;
+    gap: 20px;
+}
+
+.review-card-full {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    border-left: 6px solid #007bff;
+}
+
+.review-card-full h3 {
+    margin-bottom: 8px;
+    color: #004c99;
+}
+
+.review-card-full .verified {
+    font-size: 0.9rem;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.load-more-btn {
+    margin: 25px auto;
+    display: block;
+}
+
+.submit-review-wrapper {
+    text-align: center;
+    margin-top: 30px;
+}
