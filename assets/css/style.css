@@ -576,3 +576,18 @@ a {
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
+.btn-google {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 16px;
+    background: #4285F4;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn-google:hover {
+    background: #2a64c7;
+}
+
