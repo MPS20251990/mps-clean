@@ -48,4 +48,189 @@ a {
     align-items: center;
 }
 
-.logo
+.logo {
+    height: 60px;
+}
+
+.nav a {
+    margin-left: 25px;
+    font-weight: bold;
+    color: #004c99;
+    transition: 0.2s;
+}
+
+.nav a:hover {
+    color: #007bff;
+}
+
+/* --------------------------------------------------
+   HERO SECTION
+-------------------------------------------------- */
+.hero {
+    background: linear-gradient(
+        rgba(0, 102, 204, 0.7),
+        rgba(0, 102, 204, 0.7)
+    ),
+    url('../images/4222026LOGO.png') center/contain no-repeat;
+    padding: 120px 0;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+/* --------------------------------------------------
+   BUTTONS
+-------------------------------------------------- */
+.btn-primary {
+    background: #007bff;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.btn-primary:hover {
+    background: #005fcc;
+}
+
+.btn-secondary {
+    background: #ffffff;
+    color: #007bff;
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+    border: 2px solid #007bff;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.btn-secondary:hover {
+    background: #007bff;
+    color: white;
+}
+
+/* --------------------------------------------------
+   SERVICES PREVIEW
+-------------------------------------------------- */
+.services-preview {
+    padding: 70px 0;
+    text-align: center;
+}
+
+.services-preview h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: #004c99;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.service-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    transition: 0.2s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+}
+
+.service-card h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* --------------------------------------------------
+   REVIEWS PREVIEW
+-------------------------------------------------- */
+.reviews-preview {
+    background: #eef6ff;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.reviews-preview h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: #004c99;
+}
+
+.reviews-container {
+    display: grid;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.review-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+/* --------------------------------------------------
+   CTA SECTION
+-------------------------------------------------- */
+.cta {
+    padding: 70px 0;
+    text-align: center;
+    background: #007bff;
+    color: white;
+}
+
+.cta h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+/* --------------------------------------------------
+   FOOTER
+-------------------------------------------------- */
+.footer {
+    background: #003366;
+    color: white;
+    padding: 25px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer a {
+    color: #66b3ff;
+    font-weight: bold;
+}
+
+/* --------------------------------------------------
+   RESPONSIVE
+-------------------------------------------------- */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .tagline {
+        font-size: 1.1rem;
+    }
+
+    .nav a {
+        margin-left: 15px;
+    }
+}
