@@ -34,8 +34,8 @@ a {
    HEADER
 -------------------------------------------------- */
 .header {
-    background: #ffffff;
-    border-bottom: 1px solid #e5e5e5;
+    background: #003366;
+    border-bottom: 1px solid #00284d;
     padding: 15px 0;
     position: sticky;
     top: 0;
@@ -50,18 +50,20 @@ a {
 
 .logo {
     height: 60px;
+    width: auto;
 }
 
 .nav a {
     margin-left: 25px;
     font-weight: bold;
-    color: #004c99;
+    color: #ffffff;
     transition: 0.2s;
 }
 
 .nav a:hover {
-    color: #007bff;
+    color: #66b3ff;
 }
+
 
 /* --------------------------------------------------
    HERO SECTION
