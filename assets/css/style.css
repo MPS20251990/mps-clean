@@ -637,4 +637,54 @@ a {
     font-weight: bold;
     color: #003366;
 }
+.review-cta {
+    text-align: center;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+/* GOOGLE BUTTON */
+.btn-google {
+    display: inline-block;
+    padding: 10px 16px;
+    background: #4285F4;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+.btn-google:hover {
+    background: #2a64c7;
+}
+
+/* FACEBOOK BUTTON */
+.btn-facebook {
+    display: inline-block;
+    padding: 10px 16px;
+    background: #1877F2;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+.btn-facebook:hover {
+    background: #0f5dc8;
+}
+
+/* WEBSITE REVIEW BUTTON */
+.btn-website-review {
+    display: inline-block;
+    padding: 10px 16px;
+    background: #003366;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+.btn-website-review:hover {
+    background: #00509e;
+}
 
