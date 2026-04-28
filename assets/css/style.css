@@ -687,5 +687,20 @@ a {
 .btn-website-review:hover {
     background: #00509e;
 }
+/* ---------------------------------------------
+   SERVICE ICON SIZE FIX
+--------------------------------------------- */
 
+.service-icon {
+    width: 42px;
+    height: 42px;
+    display: block;
+    margin: 0 auto 15px auto;
+    fill: #003366;
+}
+
+.service-card svg.service-icon {
+    width: 42px;
+    height: 42px;
+}
 
