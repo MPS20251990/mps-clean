@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- cache bust 042926F -->
+    <!-- cache bust 042926G -->
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -114,11 +114,17 @@
           Something went wrong. Please try again.
         </div>
 
-        <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/pages/thank-you.html" id="contactForm" class="contact-form">
+        <form name="contact"
+              method="POST"
+              netlify
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+              action="/pages/thank-you.html"
+              id="contactForm"
+              class="contact-form">
 
             <!-- REQUIRED FOR NETLIFY DETECTION -->
             <input type="hidden" name="form-name" value="contact">
-            <!-- SECOND HIDDEN INPUT -->
             <input type="hidden" name="form-name" value="contact">
 
             <!-- HONEYPOT -->
@@ -226,4 +232,4 @@
 
 </body>
 </html>
-<!-- force redeploy 042926F -->
+<!-- force redeploy 042926G -->
