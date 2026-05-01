@@ -1,5 +1,5 @@
 [build]
-  publish = "mps-clean"
+  publish = "."
   command = ""
 
 [build.processing]
