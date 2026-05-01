@@ -26,10 +26,8 @@
     "email": "Mcleanpoolservicesllc@gmail.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Pecan Grove, Fort Bend County, TX",
       "addressLocality": "Pecan Grove",
       "addressRegion": "TX",
-      "postalCode": "77406",
       "addressCountry": "US"
     },
     "areaServed": "Pecan Grove, Fort Bend County, TX",
@@ -40,41 +38,79 @@
 </head>
 
 <body>
-  <header class="site-header">
-    <a href="../index.html" class="logo">
-      <img src="../assets/images/4222026LOGO.png" alt="McLean Pool Services Logo">
-    </a>
-    <h1>Contact McLean Pool Services</h1>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="../index.html" class="logo">
+        <img src="../assets/images/4222026LOGO.png" alt="McLean Pool Services Logo">
+      </a>
+
+      <nav class="nav">
+        <a href="../index.html">Home</a>
+        <a href="../pages/services.html">Services</a>
+        <a href="../pages/reviews.html">Reviews</a>
+        <a href="../pages/contact.html" class="active">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="contact-container">
-    <section class="contact-intro">
-      <p>Reach out for weekly service, repairs, or diagnostics. Fast communication and reliable service guaranteed.</p>
-    </section>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1>Contact McLean Pool Services</h1>
+      <p>Your trusted pool care specialist in Pecan Grove, TX.</p>
+    </div>
+  </section>
 
-    <section class="contact-form-section">
-      <form name="contact" method="POST" data-netlify="true" action="/pages/thank-you.html">
-        <input type="hidden" name="form-name" value="contact">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
+  <!-- CONTACT SECTION -->
+  <section class="section">
+    <div class="container">
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+      <h2 class="section-title">Get in Touch</h2>
+      <p class="section-subtitle">Fast communication. Reliable service. One clean pool.</p>
 
-        <label for="phone">Phone</label>
-        <input type="tel" id="phone" name="phone">
+      <div class="contact-grid">
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+        <!-- CONTACT FORM -->
+        <form name="contact" method="POST" data-netlify="true" action="/pages/thank-you.html" class="contact-form">
+          <input type="hidden" name="form-name" value="contact">
+          <input type="hidden" name="contact" value="contact">
 
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-  </main>
+          <label>Name</label>
+          <input type="text" name="name" required>
 
-  <footer class="site-footer">
-    <p>&copy; 2026 McLean Pool Services — Pecan Grove, TX</p>
-    <p>One Call • One Guy • One Clean Pool</p>
+          <label>Email</label>
+          <input type="email" name="email" required>
+
+          <label>Phone</label>
+          <input type="tel" name="phone">
+
+          <label>Message</label>
+          <textarea name="message" rows="5" required></textarea>
+
+          <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+
+        <!-- CONTACT INFO -->
+        <div class="contact-info">
+          <h3>Business Info</h3>
+          <p><strong>Phone:</strong> 832‑492‑8355</p>
+          <p><strong>Email:</strong> Mcleanpoolservicesllc@gmail.com</p>
+          <p><strong>Service Area:</strong> Pecan Grove, TX</p>
+          <p><strong>Hours:</strong> Mon–Fri</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>&copy; 2026 McLean Pool Services — Pecan Grove, TX</p>
+      <p>One Call • One Guy • One Clean Pool</p>
+    </div>
   </footer>
 
   <script src="../assets/js/main.js"></script>
