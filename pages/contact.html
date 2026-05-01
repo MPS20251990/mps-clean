@@ -1,26 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- cache bust 042926H -->
+  <!-- cache bust 043026N -->
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contact McLean Pool Services | Pecan Grove, TX</title>
-    <meta name="description" content="Contact McLean Pool Services for weekly cleaning, repairs, diagnostics, and pool maintenance in Pecan Grove, TX. Fast communication and reliable service.">
-    <link rel="canonical" href="https://www.mcleanpoolservices.com/pages/contact.html">
-    <meta name="theme-color" content="#003366">
+  <title>Contact McLean Pool Services | Pecan Grove, TX</title>
+  <meta name="description" content="Contact McLean Pool Services for weekly cleaning, repairs, diagnostics, and pool maintenance in Pecan Grove, TX. Fast communication and reliable service.">
+  <link rel="canonical" href="https://www.mcleanpoolservices.com/pages/contact.html">
+  <meta name="theme-color" content="#003366">
 
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="icon" type="image/png" href="../assets/images/4222026LOGO.png">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" type="image/png" href="../assets/images/4222026LOGO.png">
 
-    <!-- LocalBusiness Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "McLean Pool Services",
-      "image": "https://www.mcleanpoolservices.com/assets/images/4222026LOGO.png",
-      "url": "https://www.mcleanpoolservices.com",
-      "telephone": "832-492-8355",
-      "email": "Mcleanpoolservices
+  <!-- LocalBusiness Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "McLean Pool Services",
+    "image": "https://www.mcleanpoolservices.com/assets/images/4222026LOGO.png",
+    "url": "https://www.mcleanpoolservices.com",
+    "telephone": "832-492-8355",
+    "email": "Mcleanpoolservicesllc@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Pecan Grove, Fort Bend County, TX",
+      "addressLocality": "Pecan Grove",
+      "addressRegion": "TX",
+      "postalCode": "77406",
+      "addressCountry": "US"
+    },
+    "areaServed": "Pecan Grove, Fort Bend County, TX",
+    "priceRange": "$$",
+    "description": "Professional pool cleaning, equipment repair, and weekly maintenance in Pecan Grove, TX."
+  }
+  </script>
+</head>
+
+<body>
+  <header class="site-header">
+    <a href="../index.html" class="logo">
+      <img src="../assets/images/4222026LOGO.png" alt="McLean Pool Services Logo">
+    </a>
+    <h1>Contact McLean Pool Services</h1>
+  </header>
+
+  <main class="contact-container">
+    <section class="contact-intro">
+      <p>Reach out for weekly service, repairs, or diagnostics. Fast communication and reliable service guaranteed.</p>
+    </section>
+
+    <section class="contact-form-section">
+      <form name="contact" method="POST" data-netlify="true" action="/pages/thank-you.html">
+        <input type="hidden" name="form-name" value="contact">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 McLean Pool Services — Pecan Grove, TX</p>
+    <p>One Call • One Guy • One Clean Pool</p>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
