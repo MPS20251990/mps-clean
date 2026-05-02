@@ -1,8 +1,9 @@
 # Redirect Netlify subdomain → primary domain
 https://luminous-zuccutto-d1dedc.netlify.app/*  https://www.mcleanpoolservices.com/:splat  301!
 
-# Old paths → new pages
-/about      /index.html              301
-/services   /pages/services.html     301
-/contact    /pages/contact.html      301
-/reviews    /pages/reviews.html      301
+# Clean URLs → Root-level HTML files
+/services        /services.html        200
+/contact-us      /contact-us.html      200
+/reviews         /reviews.html         200
+/service-areas   /service-areas.html   200
+/thank-you       /thank-you.html       200
