@@ -5,50 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service Areas | McLean Pool Services</title>
     <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!-- LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "McLean Pool Services",
+      "image": "https://www.mcleanpoolservices.com/assets/images/4222026LOGO.png",
+      "url": "https://www.mcleanpoolservices.com",
+      "telephone": "832-492-8355",
+      "email": "Mcleanpoolservicesllc@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pecan Grove",
+        "addressRegion": "TX",
+        "addressCountry": "US"
+      },
+      "areaServed": "Pecan Grove, Fort Bend County, TX",
+      "priceRange": "$$",
+      "description": "Professional pool cleaning, equipment repair, and weekly maintenance in Pecan Grove, TX."
+    }
+    </script>
 </head>
+
+<body>
 
     <!-- HEADER -->
     <header class="header">
         <div class="container header-content">
             <a href="/" class="logo">
                 <img src="/assets/images/4222026LOGO.png" alt="McLean Pool Services Logo">
-
             </a>
 
             <nav>
-              <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/services">Services</a></li>
-                <li><a href="/service-areas">Service Areas</a></li>
-                <li><a href="/reviews">Reviews</a></li>
-                <li><a href="/contact-us">Contact</a></li>
-              </ul>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/service-areas" class="active">Service Areas</a></li>
+                    <li><a href="/reviews">Reviews</a></li>
+                    <li><a href="/contact-us">Contact</a></li>
+                </ul>
             </nav>
-
         </div>
     </header>
 
     <!-- HERO -->
-    <section class="hero-section">
-        <div class="container hero-center">
+    <section class="page-hero">
+        <div class="container">
             <h1>Service Areas</h1>
-            <p class="hero-subtext">Weekly pool cleaning and repair in Pecan Grove, New Territory, and Greatwood.</p>
+            <p>Weekly pool cleaning and repair in Pecan Grove, New Territory, and Greatwood.</p>
         </div>
     </section>
 
     <!-- MAIN CONTENT -->
-    <section class="section">
+    <section class="services-full">
         <div class="container">
-            <h2 class="section-title">Where I Provide Weekly Service</h2>
+
+            <h2>Where I Provide Weekly Service</h2>
 
             <p>
                 McLean Pool Services provides full <strong>weekly pool cleaning</strong>, equipment repair, diagnostics, and water‑chemistry service in the following core service areas:
             </p>
 
-            <!-- Pecan Grove -->
             <h3>Pecan Grove</h3>
-            <p>My primary weekly service area, including:</p>
-            <ul class="why-list">
+            <ul>
                 <li>Pecan Grove Plantation</li>
                 <li>Pecan Terrace</li>
                 <li>Pecan Lakes</li>
@@ -58,24 +79,14 @@
                 <li>Harvest Green (select sections)</li>
             </ul>
 
-            <!-- New Territory -->
             <h3>New Territory</h3>
-            <p>
-                Full weekly cleaning, repairs, and diagnostics throughout New Territory.
-            </p>
+            <p>Full weekly cleaning, repairs, and diagnostics throughout New Territory.</p>
 
-            <!-- Greatwood -->
             <h3>Greatwood</h3>
-            <p>
-                Weekly cleaning and repair services available throughout Greatwood.
-            </p>
+            <p>Weekly cleaning and repair services available throughout Greatwood.</p>
 
-            <!-- Additional Areas -->
             <h3>Additional Nearby Areas</h3>
-            <p>
-                I also provide weekly cleaning and repair services in nearby Fort Bend County neighborhoods, including:
-            </p>
-            <ul class="why-list">
+            <ul>
                 <li>Waterside Estates</li>
                 <li>Sugar Land (bordering Pecan Grove)</li>
                 <li>Aliana (limited availability)</li>
@@ -85,6 +96,45 @@
                 If you're near Pecan Grove, New Territory, or Greatwood and unsure whether you're in my weekly route, reach out — I’ll confirm availability quickly.
             </p>
 
-            <div class="hero-actions" style="margin-top: 20px;">
+            <div style="margin-top: 20px;">
                 <a href="/contact-us" class="btn-primary">Check Availability</a>
-                <a href="/services" class="btn-secondary">
+                <a href="/services" class="btn-secondary">View Services</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+
+            <div class="footer-section">
+                <img src="/assets/images/4222026LOGO.png" class="footer-logo" alt="McLean Pool Services Logo">
+                <p class="footer-tagline">One Call • One Guy • One Clean Pool</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <a href="/">Home</a>
+                <a href="/services">Services</a>
+                <a href="/service-areas">Service Areas</a>
+                <a href="/reviews">Reviews</a>
+                <a href="/contact-us">Contact</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Phone: 832‑492‑8355</p>
+                <p>Email: Mcleanpoolservicesllc@gmail.com</p>
+                <p>Pecan Grove, TX</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 McLean Pool Services — All Rights Reserved
+        </div>
+    </footer>
+
+</body>
+</html>
