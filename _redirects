@@ -7,3 +7,6 @@ https://luminous-zuccutto-d1dedc.netlify.app/*  https://www.mcleanpoolservices.c
 /reviews         /reviews.html         200
 /service-areas   /service-areas.html   200
 /thank-you       /thank-you.html       200
+
+# Required fallback for clean URLs
+/*              /index.html           200
