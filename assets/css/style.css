@@ -541,3 +541,53 @@ a {
         font-size: 1.2rem;
     }
 }
+/* Premium Review Section */
+.premium-reviews {
+    text-align: center;
+}
+
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.review-card.premium {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    text-align: left;
+}
+
+.review-stars {
+    color: #f4b400; /* gold stars */
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.review-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.review-author {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.review-author .verified {
+    background: #e8f0fe;
+    color: #1a73e8;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.review-btn {
+    margin-top: 30px;
+    display: inline-block;
+}
