@@ -1,5 +1,5 @@
 [build]
-  publish = "pages"
+  publish = "."
   command = ""
 
 [build.processing]
