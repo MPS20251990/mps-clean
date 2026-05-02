@@ -1,147 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reviews | McLean Pool Services</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
 
-    <!-- LocalBusiness Schema -->
+    <!-- Global site styles -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <!-- Reviews page styles -->
+    <link rel="stylesheet" href="/assets/css/reviews.css">
+
+    <!-- REVIEW SCHEMA MARKUP -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      "name": "McLean Pool Services",
-      "image": "https://www.mcleanpoolservices.com/assets/images/4222026LOGO.png",
-      "url": "https://www.mcleanpoolservices.com",
-      "telephone": "832-492-8355",
-      "email": "Mcleanpoolservicesllc@gmail.com",
+      "name": "McLean Pool Services LLC",
+      "image": "https://www.mcleanpoolservice.com/assets/images/4222026LOGO.png",
+      "url": "https://www.mcleanpoolservice.com",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Pecan Grove",
         "addressRegion": "TX",
         "addressCountry": "US"
       },
-      "areaServed": "Pecan Grove, Fort Bend County, TX",
-      "priceRange": "$$",
-      "description": "Professional pool cleaning, equipment repair, and weekly maintenance in Pecan Grove, TX."
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "12"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": "Dean Kenefake",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+          "reviewBody": "Nick has been maintaining our pool for a year now and the water stays crystal clear!"
+        },
+        {
+          "@type": "Review",
+          "author": "Gregory Botz",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+          "reviewBody": "He’s the best. Honest and trustworthy!"
+        }
+      ]
     }
     </script>
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <header class="header">
-        <div class="container header-content">
-            <a href="/" class="logo">
-                <img src="/assets/images/4222026LOGO.png" class="logo" alt="McLean Pool Services Logo">
+<header>
+    <img src="/assets/images/4222026LOGO.png" class="logo" alt="McLean Pool Services Logo">
+</header>
 
-            </a>
+<h1 class="page-title">Customer Reviews</h1>
 
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/services">Services</a></li>
-                    <li><a href="/service-areas">Service Areas</a></li>
-                    <li><a href="/reviews" class="active">Reviews</a></li>
-                    <li><a href="/contact-us">Contact</a></li>
-                </ul>
-            </nav>
+<div class="reviews-container">
+
+    <!-- GOOGLE REVIEWS -->
+
+    <div class="review-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="review-header">Dean Kenefake • Google Review</div>
+        <div class="review-text">
+            Nick has been maintaining our pool for a year now and the water stays crystal clear! No more headaches… Nick is honest, hard‑working, competitively priced and very good at his business.
         </div>
-    </header>
+    </div>
 
-    <!-- HERO -->
-    <section class="page-hero">
-        <div class="container">
-            <h1>Customer Reviews</h1>
-            <p>Real feedback from homeowners in Pecan Grove and surrounding areas.</p>
+    <div class="review-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="review-header">Gregory Botz • Google Review</div>
+        <div class="review-text">
+            He’s the best. Honest and trustworthy!
         </div>
-    </section>
+    </div>
 
-    <!-- REVIEWS SECTION -->
-    <section class="reviews-full">
-        <div class="container">
-
-            <div class="review-cta">
-                <a href="https://g.page/r/CexWDTmDDrwpEAI/review" class="btn-google">Leave a Google Review</a>
-                <a href="https://www.facebook.com/share/p/15n5q8pZ3C/" class="btn-facebook">Leave a Facebook Review</a>
-                <a href="/contact-us" class="btn-website-review">Send Website Review</a>
-            </div>
-
-            <div class="reviews-list">
-
-                <!-- Review 1 -->
-                <div class="review-card-full">
-                    <h3>Charles Moody</h3>
-                    <p class="verified">Verified Customer — Google & Facebook</p>
-                    <p>
-                        “Nicholas is extremely professional and reliable. My pool has never looked better. Highly recommend his weekly service.”
-                    </p>
-                </div>
-
-                <!-- Review 2 -->
-                <div class="review-card-full">
-                    <h3>Sarah Roberts</h3>
-                    <p class="verified">Verified Customer — Google</p>
-                    <p>
-                        “Fast response, honest pricing, and excellent work. Nicholas fixed an issue two other companies couldn’t diagnose.”
-                    </p>
-                </div>
-
-                <!-- Review 3 -->
-                <div class="review-card-full">
-                    <h3>Kayla Oles</h3>
-                    <p class="verified">Verified Customer — Facebook</p>
-                    <p>
-                        “Dependable and thorough. My pool is always clean and sparkling. Great communication every week.”
-                    </p>
-                </div>
-
-                <!-- Review 4 -->
-                <div class="review-card-full">
-                    <h3>Additional Reviews</h3>
-                    <p>
-                        More verified 5‑star reviews available on Google and Facebook. I appreciate every homeowner who takes the time to share their experience.
-                    </p>
-                </div>
-
-            </div>
-
+    <div class="review-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="review-header">Shaelyn Neal • Google Review</div>
+        <div class="review-text">
+            I’ve been using Nick for several years and can’t recommend him enough! Super reliable, great communication and he always goes above and beyond taking care of our pool.
         </div>
-    </section>
+    </div>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container footer-grid">
-
-            <div class="footer-section">
-                <img src="/assets/images/4222026LOGO.png" class="footer-logo" alt="McLean Pool Services Logo">
-                <p class="footer-tagline">One Call • One Guy • One Clean Pool</p>
-            </div>
-
-            <div class="footer-section">
-                <h3>Navigation</h3>
-                <a href="/">Home</a>
-                <a href="/services">Services</a>
-                <a href="/service-areas">Service Areas</a>
-                <a href="/reviews">Reviews</a>
-                <a href="/contact-us">Contact</a>
-            </div>
-
-            <div class="footer-section">
-                <h3>Contact</h3>
-                <p>Phone: 832‑492‑8355</p>
-                <p>Email: Mcleanpoolservicesllc@gmail.com</p>
-                <p>Pecan Grove, TX</p>
-            </div>
-
+    <div class="review-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="review-header">Joseph Riepel • Google Review</div>
+        <div class="review-text">
+            Nick is awesome! Always on time and responsible!
         </div>
+    </div>
 
-        <div class="footer-bottom">
-            © 2026 McLean Pool Services — All Rights Reserved
+    <div class="review-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="review-header">Najwa Akshar • Google Review</div>
+        <div class="review-text">
+            Best person ever — so kind, so professional. He keeps you informed and sends pictures. He is the best.
         </div>
-    </footer>
+    </div>
+
+    <div class="review-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="review-header">Charles Moody • Google Review</div>
+        <div class="review-text">
+            The weekly pool service has been amazing! Strong communication and photos of his work. The transformation was quick and informative. We highly recommend McLean Pool Services!
+        </div>
+    </div>
+
+    <div class="review-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="review-header">Sarah Roberts • Google Review</div>
+        <div class="review-text">
+            Literally the absolute best! Nick got our pool ship shape after another company let it get out of control. So grateful to find an honest, hardworking and kind company.
+        </div>
+    </div>
+
+    <div class="review-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="review-header">Gary Windham • Google Review</div>
+        <div class="review-text">
+            Great worker and fair pricing.
+        </div>
+    </div>
+
+    <!-- FACEBOOK REVIEWS -->
+
+    <div class="review-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="review-header">Cindy Mahan Rosenbaum • Facebook Review</div>
+        <div class="review-text">
+            I left my pool unattended and it turned swamp‑green. McLean Pool Services showed up the same day in rainy weather and had it crystal clear within 2 days. Friendly, knowledgeable, and consistent. Highly recommend!
+        </div>
+    </div>
+
+    <div class="review-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="review-header">Kris Atkinson • Facebook Review</div>
+        <div class="review-text">
+            Extremely pleased with the customer care. We’ve used Nick for years — you won’t find a more knowledgeable, hard worker. Highly recommend his company.
+        </div>
+    </div>
+
+    <div class="review-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="review-header">Evelyn Aiello • Facebook Review</div>
+        <div class="review-text">
+            Nick is the nicest guy! Very responsive and my pool has never looked better with no effort on my part. Highly recommend!
+        </div>
+    </div>
+
+    <div class="review-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="review-header">Kayla Oles • Facebook Review</div>
+        <div class="review-text">
+            Nick is honest, helpful, and knowledgeable. We just moved into a house with a pool and he came out to get us started with tips and pointers. Highly recommend!
+        </div>
+    </div>
+
+</div>
+
+<!-- REVIEW CTA SECTION -->
+<div class="review-cta">
+
+    <h2>Loved Our Service? Leave a Review</h2>
+
+    <div class="review-buttons">
+
+        <a href="https://g.page/r/CexWDTmDDrwpEAI/review" class="review-btn-google">
+            Leave a Google Review
+        </a>
+
+        <a href="https://www.facebook.com/profile.php?id=61575176169589&sk=reviews" class="review-btn-facebook">
+            Leave a Facebook Review
+        </a>
+
+    </div>
+</div>
+
+<footer>
+    <img src="/assets/images/4222026LOGO.png" class="logo" alt="McLean Pool Services Logo">
+    <p>© 2026 McLean Pool Services LLC</p>
+</footer>
 
 </body>
 </html>
