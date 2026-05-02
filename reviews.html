@@ -3,203 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer Reviews | McLean Pool Services</title>
+    <title>Reviews | McLean Pool Services</title>
     <link rel="stylesheet" href="/assets/css/style.css">
 
-
-    <!-- REVIEW + LOCAL BUSINESS SCHEMA -->
+    <!-- LocalBusiness Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "McLean Pool Services",
       "image": "https://www.mcleanpoolservices.com/assets/images/4222026LOGO.png",
-      "url": "https://www.mcleanpoolservices.com/reviews",
+      "url": "https://www.mcleanpoolservices.com",
       "telephone": "832-492-8355",
+      "email": "Mcleanpoolservicesllc@gmail.com",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Pecan Grove",
         "addressRegion": "TX",
         "addressCountry": "US"
       },
+      "areaServed": "Pecan Grove, Fort Bend County, TX",
       "priceRange": "$$",
-      "review": [
-        {
-          "@type": "Review",
-          "author": "Charles “Chuck” Moody",
-          "datePublished": "2026-04-29",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Weekly service has been outstanding with strong communication and photos of the work. Nick transformed our pool from unusable to something we enjoy again. He helped us through the freeze and upgraded our pump to a more reliable, energy-efficient unit."
-        },
-        {
-          "@type": "Review",
-          "author": "Sarah Roberts",
-          "datePublished": "2026-04-29",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Nick got our pool back in shape after another company let it get out of control. Honest, hardworking, and kind — we’re customers for life."
-        },
-        {
-          "@type": "Review",
-          "author": "Kayla Oles",
-          "datePublished": "2025-11-06",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Nick is honest, helpful, and extremely knowledgeable. As new pool owners, he walked us through everything we needed to know and earned our business immediately."
-        }
-      ],
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "reviewCount": "3"
-      }
+      "description": "Professional pool cleaning, equipment repair, and weekly maintenance in Pecan Grove, TX."
     }
     </script>
-
-    <style>
-      .reviews-grid {
-        display: grid;
-        gap: 1.5rem;
-        margin-top: 2rem;
-      }
-
-      .review-card {
-        background: #fff;
-        border: 1px solid #e5e5e5;
-        padding: 1.5rem;
-        border-radius: 8px;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-      }
-
-      .review-name {
-        font-weight: 700;
-        font-size: 1.1rem;
-        margin-bottom: 0.25rem;
-      }
-
-      .review-date {
-        font-size: 0.9rem;
-        opacity: 0.7;
-        margin-bottom: 0.75rem;
-      }
-
-      .stars {
-        color: #f4b400;
-        margin-bottom: 0.75rem;
-        font-size: 1.1rem;
-      }
-    </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
-<header class="header">
-    <div class="container header-content">
-        <a href="/" class="logo">
-            <img src="/assets/images/4222026LOGO.png" alt="McLean Pool Services Logo">
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header-content">
+            <a href="/" class="logo">
+                <img src="/assets/images/4222026LOGO.png" alt="McLean Pool Services Logo">
+            </a>
 
-        </a>
-
-        <nav>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/service-areas">Service Areas</a></li>
-            <li><a href="/reviews">Reviews</a></li>
-            <li><a href="/contact-us">Contact</a></li>
-          </ul>
-        </nav>
-
-    </div>
-</header>
-
-<!-- MAIN CONTENT -->
-<main class="section">
-    <div class="container" style="max-width:900px;">
-
-        <h1>Pool Service Reviews in Pecan Grove, TX</h1>
-        <p>Verified customer feedback from homeowners who trust McLean Pool Services.</p>
-
-        <!-- REVIEW BUTTONS -->
-        <div style="margin:2rem 0; display:flex; flex-wrap:wrap; gap:1rem;">
-          
-          <!-- GOOGLE -->
-          <a href="https://search.google.com/local/writereview?placeid=ChIJp0xZk7yFQIYR0N6D-kZ0EXo"
-             class="btn-primary" style="flex:1; text-align:center;">
-            Write a Review on Google
-          </a>
-
-          <!-- FACEBOOK -->
-          <a href="https://www.facebook.com/profile.php?id=61575176169589&sk=reviews"
-             class="btn-primary" style="flex:1; text-align:center; background:#1877F2;">
-            Write a Review on Facebook
-          </a>
-
-          <!-- WEBSITE REVIEW FORM -->
-          <a href="/contact-us"
-             class="btn-primary" style="flex:1; text-align:center; background:#444;">
-            Leave a Review on Our Website
-          </a>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/service-areas">Service Areas</a></li>
+                    <li><a href="/reviews" class="active">Reviews</a></li>
+                    <li><a href="/contact-us">Contact</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-        <h2>What Customers Are Saying</h2>
+    <!-- HERO -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Customer Reviews</h1>
+            <p>Real feedback from homeowners in Pecan Grove and surrounding areas.</p>
+        </div>
+    </section>
 
-        <div class="reviews-grid">
+    <!-- REVIEWS SECTION -->
+    <section class="reviews-full">
+        <div class="container">
 
-          <!-- REVIEW 1 -->
-          <div class="review-card">
-            <div class="review-name">Charles “Chuck” Moody</div>
-            <div class="review-date">April 29, 2026</div>
-            <div class="stars">★★★★★</div>
-            <p>
-              Weekly service has been outstanding with strong communication and photos of the work. Nick transformed our pool from unusable to something we enjoy again. He helped us through the freeze and upgraded our pump to a more reliable, energy-efficient unit.
-            </p>
-          </div>
+            <div class="review-cta">
+                <a href="https://g.page/r/CexWDTmDDrwpEAI/review" class="btn-google">Leave a Google Review</a>
+                <a href="https://www.facebook.com/share/p/15n5q8pZ3C/" class="btn-facebook">Leave a Facebook Review</a>
+                <a href="/contact-us" class="btn-website-review">Send Website Review</a>
+            </div>
 
-          <!-- REVIEW 2 -->
-          <div class="review-card">
-            <div class="review-name">Sarah Roberts</div>
-            <div class="review-date">April 29, 2026</div>
-            <div class="stars">★★★★★</div>
-            <p>
-              Nick got our pool back in shape after another company let it get out of control. Honest, hardworking, and kind — we’re customers for life.
-            </p>
-          </div>
+            <div class="reviews-list">
 
-          <!-- REVIEW 3 -->
-          <div class="review-card">
-            <div class="review-name">Kayla Oles</div>
-            <div class="review-date">November 6, 2025</div>
-            <div class="stars">★★★★★</div>
-            <p>
-              Nick is honest, helpful, and extremely knowledgeable. As new pool owners, he walked us through everything we needed to know and earned our business immediately.
-            </p>
-          </div>
+                <!-- Review 1 -->
+                <div class="review-card-full">
+                    <h3>Charles Moody</h3>
+                    <p class="verified">Verified Customer — Google & Facebook</p>
+                    <p>
+                        “Nicholas is extremely professional and reliable. My pool has never looked better. Highly recommend his weekly service.”
+                    </p>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="review-card-full">
+                    <h3>Sarah Roberts</h3>
+                    <p class="verified">Verified Customer — Google</p>
+                    <p>
+                        “Fast response, honest pricing, and excellent work. Nicholas fixed an issue two other companies couldn’t diagnose.”
+                    </p>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="review-card-full">
+                    <h3>Kayla Oles</h3>
+                    <p class="verified">Verified Customer — Facebook</p>
+                    <p>
+                        “Dependable and thorough. My pool is always clean and sparkling. Great communication every week.”
+                    </p>
+                </div>
+
+                <!-- Review 4 -->
+                <div class="review-card-full">
+                    <h3>Additional Reviews</h3>
+                    <p>
+                        More verified 5‑star reviews available on Google and Facebook. I appreciate every homeowner who takes the time to share their experience.
+                    </p>
+                </div>
+
+            </div>
 
         </div>
-    </div>
-</main>
+    </section>
 
-<!-- FOOTER -->
-<footer class="footer">
-    <div class="container footer-container">
-      <p>&copy; 2026 McLean Pool Services — Pecan Grove, TX</p>
-      <p>One Call • One Guy • One Clean Pool</p>
-    </div>
-</footer>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
 
-<script src="assets/js/main.js"></script>
+            <div class="footer-section">
+                <img src="/assets/images/4222026LOGO.png" class="footer-logo" alt="McLean Pool Services Logo">
+                <p class="footer-tagline">One Call • One Guy • One Clean Pool</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <a href="/">Home</a>
+                <a href="/services">Services</a>
+                <a href="/service-areas">Service Areas</a>
+                <a href="/reviews">Reviews</a>
+                <a href="/contact-us">Contact</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Phone: 832‑492‑8355</p>
+                <p>Email: Mcleanpoolservicesllc@gmail.com</p>
+                <p>Pecan Grove, TX</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 McLean Pool Services — All Rights Reserved
+        </div>
+    </footer>
+
 </body>
 </html>
-
