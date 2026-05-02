@@ -6,33 +6,120 @@
     <title>Contact Us | McLean Pool Services</title>
     <link rel="stylesheet" href="/assets/css/style.css">
 
-
-
-  <!-- LocalBusiness Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "McLean Pool Services",
-    "image": "https://www.mcleanpoolservices.com/assets/images/4222026LOGO.png",
-    "url": "https://www.mcleanpoolservices.com",
-    "telephone": "832-492-8355",
-    "email": "Mcleanpoolservicesllc@gmail.com",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Pecan Grove",
-      "addressRegion": "TX",
-      "addressCountry": "US"
-    },
-    "areaServed": "Pecan Grove, Fort Bend County, TX",
-    "priceRange": "$$",
-    "description": "Professional pool cleaning, equipment repair, and weekly maintenance in Pecan Grove, TX."
-  }
-  </script>
+    <!-- LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "McLean Pool Services",
+      "image": "https://www.mcleanpoolservices.com/assets/images/4222026LOGO.png",
+      "url": "https://www.mcleanpoolservices.com",
+      "telephone": "832-492-8355",
+      "email": "Mcleanpoolservicesllc@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pecan Grove",
+        "addressRegion": "TX",
+        "addressCountry": "US"
+      },
+      "areaServed": "Pecan Grove, Fort Bend County, TX",
+      "priceRange": "$$",
+      "description": "Professional pool cleaning, equipment repair, and weekly maintenance in Pecan Grove, TX."
+    }
+    </script>
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header class="header">
-    <div class="container header-container">
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header-content">
+            <a href="/" class="logo">
+                <img src="/assets/images/4222026LOGO.png" alt="McLean Pool Services Logo">
+            </a>
+
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/service-areas">Service Areas</a></li>
+                    <li><a href="/reviews">Reviews</a></li>
+                    <li><a href="/contact-us" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Contact Me</h1>
+            <p>Fast response. Clear communication. Professional service.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section class="contact-section">
+        <div class="container">
+            <h2>Send a Message</h2>
+
+            <form name="contact" method="POST" data-netlify="true" action="/thank-you" class="contact-form">
+                <input type="hidden" name="form-name" value="contact">
+
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Your Phone</label>
+                <input type="text" id="phone" name="phone">
+
+                <label for="message">How can I help?</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="btn-primary" style="margin-top: 20px;">Send Message</button>
+            </form>
+
+            <div class="contact-info">
+                <h3>Direct Contact</h3>
+                <p><strong>Phone:</strong> 832‑492‑8355</p>
+                <p><strong>Email:</strong> Mcleanpoolservicesllc@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+
+            <div class="footer-section">
+                <img src="/assets/images/4222026LOGO.png" class="footer-logo" alt="McLean Pool Services Logo">
+                <p class="footer-tagline">One Call • One Guy • One Clean Pool</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <a href="/">Home</a>
+                <a href="/services">Services</a>
+                <a href="/service-areas">Service Areas</a>
+                <a href="/reviews">Reviews</a>
+                <a href="/contact-us">Contact</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Phone: 832‑492‑8355</p>
+                <p>Email: Mcleanpoolservicesllc@gmail.com</p>
+                <p>Pecan Grove, TX</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 McLean Pool Services — All Rights Reserved
+        </div>
+    </footer>
+
+</body>
+</html>
