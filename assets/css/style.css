@@ -167,6 +167,58 @@ a {
     color: white;
 }
 
+/* CTA GROUPS */
+.hero-buttons,
+.page-hero-actions,
+.contact-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.page-hero-actions {
+    margin-top: 20px;
+}
+
+.contact-actions {
+    margin-top: 15px;
+}
+
+.hero-buttons .btn-primary,
+.hero-buttons .btn-secondary,
+.page-hero-actions .btn-primary,
+.page-hero-actions .btn-secondary,
+.contact-actions .btn-primary,
+.contact-actions .btn-secondary {
+    min-height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-area-note {
+    margin-top: 10px;
+}
+
+/* TRUST STRIP */
+.trust-strip {
+    background: #003366;
+    color: #ffffff;
+    padding: 18px 0;
+}
+
+.trust-strip-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    text-align: center;
+}
+
+.trust-strip-item {
+    font-weight: bold;
+}
+
 /* Review buttons */
 .btn-google,
 .btn-facebook,
@@ -462,6 +514,11 @@ a {
     color: white;
 }
 
+.footer-section p a {
+    display: inline;
+    margin-bottom: 0;
+}
+
 .footer-logo {
     width: 120px;
     margin-bottom: 10px;
@@ -521,6 +578,34 @@ a {
         gap: 15px;
     }
 
+    .hero {
+        padding: 80px 0;
+    }
+
+    .hero-buttons,
+    .page-hero-actions,
+    .contact-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-buttons .btn-primary,
+    .hero-buttons .btn-secondary,
+    .page-hero-actions .btn-primary,
+    .page-hero-actions .btn-secondary,
+    .contact-actions .btn-primary,
+    .contact-actions .btn-secondary,
+    .contact-form .btn-primary {
+        width: 100%;
+        min-height: 48px;
+        margin-left: 0 !important;
+    }
+
+    .trust-strip-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px 12px;
+    }
+
     .footer-grid {
         text-align: center;
     }
@@ -539,6 +624,12 @@ a {
 
     .hero-upgraded .tagline {
         font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .trust-strip-grid {
+        grid-template-columns: 1fr;
     }
 }
 /* Premium Review Section */
