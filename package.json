@@ -5,13 +5,19 @@
     "author": "McLean Pool Services LLC",
     "license": "UNLICENSED",
     "private": true,
+    "engines": {
+          "node": ">=20"
+    },
     "scripts": {
           "dev": "netlify dev",
           "build:reviews": "node scripts/build-reviews.js",
           "backup": "bash scripts/backup-data.sh",
+          "test:leads": "node --test tests/website-lead-intake.test.mjs",
           "predeploy": "bash scripts/deploy-check.sh",
           "deploy": "netlify deploy --prod"
     },
-    "dependencies": {},
+    "dependencies": {
+          "firebase-admin": "14.0.0"
+    },
     "devDependencies": {}
 }
