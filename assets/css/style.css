@@ -102,7 +102,15 @@ a {
 }
 
 .homepage-hero {
+    background: #007bff;
     padding: 105px 0;
+}
+
+.hero-phone {
+    display: inline-block;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-top: 18px;
 }
 
 .hero-eyebrow {
