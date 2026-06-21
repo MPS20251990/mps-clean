@@ -65,21 +65,70 @@
     </header>
 
     <!-- PAGE HERO -->
-    <section class="page-hero">
-        <div class="container">
-            <h1>Contact Me</h1>
-            <p>Fast response. Clear communication. Professional service.</p>
-            <p class="service-area-note">Serving Pecan Grove, Richmond, Sugar Land &amp; Fort Bend County.</p>
-            <div class="page-hero-actions">
-                <a href="tel:18324928355" class="btn-primary">Call or Text Nick</a>
+    <section class="page-hero contact-page-hero">
+        <div class="container contact-hero-layout">
+            <div class="contact-hero-intro">
+                <p class="contact-hero-eyebrow">McLean Pool Services LLC</p>
+                <h1>Request Pool Service or Repair</h1>
+                <p class="contact-hero-subheadline">Talk directly with Nick McLean about weekly pool service, equipment diagnostics, repairs, filter cleaning, or route availability.</p>
+            </div>
+
+            <div class="contact-hero-details" aria-label="McLean Pool Services contact information">
+                <h2>Serving Fort Bend County</h2>
+                <ul>
+                    <li>Pecan Grove</li>
+                    <li>Richmond</li>
+                    <li>Sugar Land</li>
+                    <li>Fort Bend County</li>
+                </ul>
+                <p><strong>Phone:</strong> <a href="tel:18324928355">832-492-8355</a></p>
+                <p><strong>Email:</strong> <a href="mailto:mcleanpoolservicesllc@gmail.com">mcleanpoolservicesllc@gmail.com</a></p>
             </div>
         </div>
     </section>
 
-    <!-- CONTACT FORM -->
-    <section class="contact-section">
+    <!-- TRUST STRIP -->
+    <section class="trust-strip" aria-label="Why homeowners trust McLean Pool Services">
+        <div class="container trust-strip-grid">
+            <div class="trust-strip-item">20 Five-Star Reviews</div>
+            <div class="trust-strip-item">Owner Operated</div>
+            <div class="trust-strip-item">Equipment Repair Capable</div>
+            <div class="trust-strip-item">Serving Fort Bend County</div>
+        </div>
+    </section>
+
+    <!-- SERVICE NEEDS -->
+    <section class="contact-needs-section">
         <div class="container">
-            <h2>Send a Message</h2>
+            <div class="contact-section-heading">
+                <p class="section-kicker">Weekly care, repairs, and route questions</p>
+                <h2>What can I help with?</h2>
+                <p>Nick handles pool service and pool repair inquiries from homeowners in Pecan Grove, TX, Richmond, TX, Sugar Land, TX, and nearby Fort Bend County neighborhoods.</p>
+            </div>
+
+            <ul class="contact-needs-list">
+                <li>Weekly Pool Service</li>
+                <li>Equipment Diagnostics</li>
+                <li>Pump Repair</li>
+                <li>Filter Cleaning</li>
+                <li>Salt Systems</li>
+                <li>Green-to-Clean Projects</li>
+                <li>Route Availability Questions</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section class="contact-section contact-page-form-section">
+        <div class="container contact-form-layout">
+            <div class="contact-form-intro">
+                <p class="section-kicker">Talk directly with the owner</p>
+                <h2>Tell Nick About Your Pool</h2>
+                <p>Weekly service, equipment repair, filter cleaning, diagnostics, and route availability questions.</p>
+                <p class="contact-response-note">Most inquiries receive a response within one business day, often sooner.</p>
+                <p class="contact-service-area-reminder">Serving Pecan Grove, Richmond, Sugar Land, and nearby Fort Bend County neighborhoods.</p>
+                <p>Photos, clear communication, and honest recommendations are part of every service.</p>
+            </div>
 
             <form name="contact" method="POST" data-netlify="true" action="/thank-you.html" class="contact-form">
                 <input type="hidden" name="form-name" value="contact">
@@ -98,13 +147,17 @@
 
                 <button type="submit" class="btn-primary" style="margin-top: 20px;">Send Message</button>
             </form>
+        </div>
+    </section>
 
-            <div class="contact-info">
-                <h3>Direct Contact</h3>
-                <div class="contact-actions">
-                    <a href="tel:18324928355" class="btn-primary">Call or Text Nick</a>
-                    <a href="mailto:mcleanpoolservicesllc@gmail.com" class="btn-secondary">Email Nick</a>
-                </div>
+    <!-- FINAL CTA -->
+    <section class="contact-final-cta">
+        <div class="container">
+            <h2>Need pool service in Pecan Grove, Richmond, or Sugar Land?</h2>
+            <p>Call or Text: <a href="tel:18324928355">832-492-8355</a></p>
+            <div class="contact-final-actions">
+                <a href="tel:18324928355" class="btn-primary">Call or Text Nick</a>
+                <a href="/contact-us" class="btn-secondary">Request Service</a>
             </div>
         </div>
     </section>
