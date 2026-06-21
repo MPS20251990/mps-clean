@@ -829,6 +829,163 @@ a {
 }
 
 /* --------------------------------------------------
+   REVIEWS PAGE
+-------------------------------------------------- */
+.page-hero.reviews-page-hero {
+    padding: 52px 0 48px;
+}
+
+.reviews-page-hero h1 {
+    font-size: clamp(2.35rem, 4vw, 3.3rem);
+    line-height: 1.12;
+    margin: 0 auto 16px;
+    max-width: 850px;
+}
+
+.reviews-page-hero p {
+    font-size: 1.15rem;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.reviews-owner-intro {
+    background: #003366;
+    color: #ffffff;
+    padding: 18px 0;
+    text-align: center;
+}
+
+.reviews-owner-intro p {
+    font-weight: 700;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.reviews-page-content {
+    background: #f7f9fc;
+    padding: 58px 0 66px;
+}
+
+.reviews-page-content .reviews-container {
+    display: grid;
+    gap: 22px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin: 0 auto;
+    max-width: 1120px;
+    padding: 0;
+}
+
+.reviews-page-content .review-card {
+    background: #ffffff;
+    border: 1px solid #dce8f3;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    padding: 24px;
+}
+
+.reviews-page-content .stars {
+    color: #f4b400;
+    font-size: 1.15rem;
+    letter-spacing: 0.03em;
+    margin-bottom: 8px;
+}
+
+.reviews-page-content .review-header {
+    color: #003366;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.reviews-page-content .review-text {
+    font-size: 0.98rem;
+    line-height: 1.65;
+}
+
+.review-cta {
+    background: #eef6ff;
+    border-bottom: 1px solid #dce8f3;
+    border-top: 1px solid #dce8f3;
+    display: block;
+    margin: 0;
+    padding: 48px 0;
+}
+
+.review-cta h2 {
+    color: #003366;
+    font-size: 1.85rem;
+    margin-bottom: 20px;
+}
+
+.review-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+.review-btn-google,
+.review-btn-facebook {
+    border-radius: 6px;
+    color: #ffffff;
+    display: inline-flex;
+    font-weight: 700;
+    justify-content: center;
+    min-height: 48px;
+    min-width: 240px;
+    padding: 12px 24px;
+}
+
+.review-btn-google {
+    background: #003366;
+}
+
+.review-btn-facebook {
+    background: #1877F2;
+}
+
+.reviews-final-cta {
+    background: #003366;
+    color: #ffffff;
+    padding: 58px 0;
+    text-align: center;
+}
+
+.reviews-final-cta h2 {
+    color: #ffffff;
+    font-size: clamp(2rem, 3vw, 2.55rem);
+    line-height: 1.18;
+    margin-bottom: 14px;
+}
+
+.reviews-final-cta p {
+    font-size: 1.08rem;
+}
+
+.reviews-final-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.reviews-final-actions .btn-primary,
+.reviews-final-actions .btn-secondary {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    min-height: 48px;
+}
+
+.reviews-final-cta .btn-primary {
+    background: #007bff;
+}
+
+.reviews-final-cta .btn-secondary {
+    background: #ffffff;
+}
+
+/* --------------------------------------------------
    CONTACT PAGE
 -------------------------------------------------- */
 .contact-section {
@@ -1508,6 +1665,37 @@ a {
         text-align: center;
     }
 
+    .page-hero.reviews-page-hero {
+        padding: 46px 0 42px;
+    }
+
+    .reviews-page-content {
+        padding: 48px 0 54px;
+    }
+
+    .reviews-page-content .reviews-container {
+        grid-template-columns: 1fr;
+    }
+
+    .review-cta,
+    .reviews-final-cta {
+        padding: 48px 0;
+    }
+
+    .review-buttons,
+    .reviews-final-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .review-btn-google,
+    .review-btn-facebook,
+    .reviews-final-actions .btn-primary,
+    .reviews-final-actions .btn-secondary {
+        min-width: 0;
+        width: 100%;
+    }
+
     .service-areas-hero {
         padding: 48px 0 44px;
     }
@@ -1691,6 +1879,35 @@ a {
 
     .homepage-section .section-title {
         font-size: 1.85rem;
+    }
+
+    .page-hero.reviews-page-hero {
+        padding: 38px 0 36px;
+    }
+
+    .reviews-page-hero h1 {
+        font-size: 2.1rem;
+    }
+
+    .reviews-page-hero p {
+        font-size: 1.04rem;
+    }
+
+    .reviews-owner-intro {
+        padding: 16px 0;
+    }
+
+    .reviews-page-content {
+        padding: 42px 0 46px;
+    }
+
+    .reviews-page-content .review-card {
+        padding: 20px;
+    }
+
+    .review-cta,
+    .reviews-final-cta {
+        padding: 42px 0;
     }
 
     .service-areas-hero h1 {
